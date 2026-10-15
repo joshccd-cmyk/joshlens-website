@@ -1,9 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://joshlens.com/</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/hero-gt-a.jpg</image:loc>
+      <image:title>Georgia Tech graduation photos at Tech Tower</image:title>
+      <image:caption>Georgia Tech grads in cap and gown spraying champagne on the lawn at golden hour</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/gt-tech-tower-solo.jpg</image:loc>
+      <image:title>Tech Tower graduation photo, solo</image:title>
+      <image:caption>Georgia Tech grad in cap and gown standing in front of Tech Tower</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/gt-campanile-group-champagne.jpg</image:loc>
+      <image:title>Georgia Tech Campanile group graduation photo</image:title>
+      <image:caption>Group of Georgia Tech grads with champagne at the Campanile</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/gt-bobby-dodd-trio-seats.jpg</image:loc>
+      <image:title>Bobby Dodd Stadium graduation photos</image:title>
+      <image:caption>Three Georgia Tech grads in the stands at Bobby Dodd Stadium</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/gt-archway-solo.jpg</image:loc>
+      <image:title>Georgia Tech archway graduation photo</image:title>
+      <image:caption>Georgia Tech grad in cap and gown under the campus archway</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/gt-culc-solo.jpg</image:loc>
+      <image:title>CULC graduation photo at Georgia Tech</image:title>
+      <image:caption>Georgia Tech grad outside the Clough Undergraduate Learning Commons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/emory-quad-trio.jpg</image:loc>
+      <image:title>Emory quad graduation photos</image:title>
+      <image:caption>Three Emory grads walking the Emory University quadrangle</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/emory-law-solo.jpg</image:loc>
+      <image:title>Emory School of Law graduation photo</image:title>
+      <image:caption>Emory law grad in regalia outside the School of Law</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://joshlens.com/seasons</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/seasons/fall-2024/gt-tech-tower-solo-white-dress.jpg</image:loc>
+      <image:title>Georgia Tech graduation photo at Tech Tower</image:title>
+      <image:caption>Georgia Tech grad in gown and white dress at Tech Tower</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/seasons/fall-2024/gt-ramblin-wreck-solo-pompom.jpg</image:loc>
+      <image:title>Ramblin&apos; Wreck graduation photo</image:title>
+      <image:caption>Georgia Tech grad with a pom-pom on the Ramblin&apos; Wreck</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/seasons/fall-2024/gt-tech-tower-solo-honor-cords.jpg</image:loc>
+      <image:title>Georgia Tech fall graduation photo</image:title>
+      <image:caption>Georgia Tech grad with honor cords at Tech Tower in fall</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/seasons/fall-2024/gsu-law-solo-doctoral-gown.jpg</image:loc>
+      <image:title>Georgia State law graduation photo</image:title>
+      <image:caption>Law grad outside Georgia State University College of Law</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/seasons/fall-2023/gt-lawn-group-toss.jpg</image:loc>
+      <image:title>Georgia Tech group graduation photo</image:title>
+      <image:caption>Georgia Tech grads tossing a friend into the air on the lawn</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/seasons/fall-2023/gt-tech-tower-steps-solo.jpg</image:loc>
+      <image:title>Tech Tower steps graduation photo</image:title>
+      <image:caption>Georgia Tech grad on the steps below Tech Tower</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/seasons/fall-2023/gt-brick-path-group-portrait.jpg</image:loc>
+      <image:title>Georgia Tech group graduation portrait</image:title>
+      <image:caption>Fifteen Georgia Tech grads under fall leaves</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/seasons/fall-2023/gt-fountain-duo-champagne.jpg</image:loc>
+      <image:title>Champagne graduation photo in Atlanta</image:title>
+      <image:caption>Two Georgia Tech grads spraying champagne in a fountain</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/seasons/spring-2024/emory-sign-group-champagne.jpg</image:loc>
+      <image:title>Emory University graduation group photo</image:title>
+      <image:caption>Emory grads on the Emory University sign</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/seasons/spring-2024/emory-law-solo-apalsa-stole.jpg</image:loc>
+      <image:title>Emory School of Law graduation photo</image:title>
+      <image:caption>Emory law grad outside the School of Law</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/seasons/spring-2024/gt-scheller-solo-twirl.jpg</image:loc>
+      <image:title>Scheller College of Business graduation photo</image:title>
+      <image:caption>Georgia Tech grad outside Scheller College of Business</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://joshlens.com/assets/seasons/spring-2024/gt-tech-lawn-group-jump.jpg</image:loc>
+      <image:title>Georgia Tech spring graduation group photo</image:title>
+      <image:caption>Georgia Tech grads jumping on the lawn</image:caption>
+    </image:image>
   </url>
 </urlset>

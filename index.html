@@ -47,11 +47,27 @@
       "email": "josh.ccd@gmail.com",
       "image": "https://joshlens.com/assets/og-hero.jpg",
       "priceRange": "$349-$450",
+      "slogan": "Grad photos that actually look like you.",
+      "currenciesAccepted": "USD",
+      "paymentAccepted": "Cash, Credit Card, Venmo, Zelle",
       "address": { "@type": "PostalAddress", "addressLocality": "Atlanta", "addressRegion": "GA", "addressCountry": "US" },
+      "geo": { "@type": "GeoCoordinates", "latitude": 33.7756, "longitude": -84.3963 },
       "areaServed": [
-        { "@type": "City", "name": "Atlanta" },
-        { "@type": "CollegeOrUniversity", "name": "Georgia Institute of Technology" },
-        { "@type": "CollegeOrUniversity", "name": "Emory University" }
+        { "@type": "City", "name": "Atlanta", "sameAs": "https://en.wikipedia.org/wiki/Atlanta" },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Georgia Institute of Technology",
+          "alternateName": ["Georgia Tech", "GT", "Ga Tech"],
+          "url": "https://www.gatech.edu/",
+          "sameAs": "https://en.wikipedia.org/wiki/Georgia_Institute_of_Technology"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Emory University",
+          "alternateName": "Emory",
+          "url": "https://www.emory.edu/",
+          "sameAs": "https://en.wikipedia.org/wiki/Emory_University"
+        }
       ],
       "founder": { "@type": "Person", "name": "Josh Chan", "jobTitle": "Photographer and designer" },
       "sameAs": ["https://instagram.com/josh.lens"],
@@ -72,19 +88,75 @@
       "provider": { "@id": "https://joshlens.com/#business" },
       "areaServed": { "@type": "State", "name": "Georgia" },
       "audience": { "@type": "EducationalAudience", "educationalRole": "student" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://joshlens.com/#website",
+      "url": "https://joshlens.com/",
+      "name": "Josh Lens",
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://joshlens.com/#business" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://joshlens.com/#webpage",
+      "url": "https://joshlens.com/",
+      "name": "Georgia Tech & Emory Graduation Photographer in Atlanta",
+      "isPartOf": { "@id": "https://joshlens.com/#website" },
+      "about": { "@id": "https://joshlens.com/#business" },
+      "primaryImageOfPage": "https://joshlens.com/assets/og-hero.jpg",
+      "mentions": [
+        { "@type": "Place", "name": "Tech Tower", "description": "Georgia Tech's landmark administration building and its most-photographed graduation spot." },
+        { "@type": "Place", "name": "Bobby Dodd Stadium", "description": "Georgia Tech's football stadium, used for stands and field graduation frames." },
+        { "@type": "Place", "name": "Clough Undergraduate Learning Commons", "alternateName": "The CULC" },
+        { "@type": "Place", "name": "Scheller College of Business" },
+        { "@type": "Place", "name": "Harrison Square" },
+        { "@type": "Place", "name": "Emory Quadrangle" },
+        { "@type": "Place", "name": "Glenn Memorial Church" },
+        { "@type": "Place", "name": "Emory University School of Law" },
+        { "@type": "Place", "name": "Emory Campanile" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://joshlens.com/#faq",
+      "isPartOf": { "@id": "https://joshlens.com/#webpage" },
+      "mainEntity": [
+        { "@type": "Question", "name": "What should I wear for graduation photos?", "acceptedAnswer": { "@type": "Answer", "text": "Whatever you feel most like yourself in, under the regalia. Something nice and simple - my favorite look is gown open, so it'll get some air time. Solid colors tend to photograph better than busy patterns, and I'd skip big logos." } },
+        { "@type": "Question", "name": "Can I bring props to my grad photo session?", "acceptedAnswer": { "@type": "Answer", "text": "Please do. Cowboy hats, a volleyball, your cello, a traffic cone someone liberated sophomore year. Props give your hands something to do and they're usually what makes a gallery feel like you instead of a stock photo." } },
+        { "@type": "Question", "name": "How many photos do I actually get?", "acceptedAnswer": { "@type": "Answer", "text": "65 or more, fully edited, for a solo session, and usually around 50+ per grad if doing groups and solos. I don't hold photos back or sell you a bigger gallery later - you'll get everything worth keeping." } },
+        { "@type": "Question", "name": "How long until I get my graduation photos?", "acceptedAnswer": { "@type": "Answer", "text": "Seven business days for your full gallery. If you need them sooner — announcements, family flying out — rush 3-day editing is $95, and I'll tell you straight if I can hit the date." } },
+        { "@type": "Question", "name": "What happens if it rains on my session day?", "acceptedAnswer": { "@type": "Answer", "text": "I reserve backup days around every booking for exactly this. If there is torrential downpour, we'll talk and pivot if needed - no fee, no hassle. Overcast really can give great studio lighting, and I take a lot of pride in providing great photos regardless of the weather." } },
+        { "@type": "Question", "name": "How do I hold my date?", "acceptedAnswer": { "@type": "Answer", "text": "Half the session price up front, the rest after the shoot and before I deliver the album. Grab a date in the calendar and I'll reach out about the deposit." } },
+        { "@type": "Question", "name": "How many outfits can I bring?", "acceptedAnswer": { "@type": "Answer", "text": "One is usually the sweet spot for an hour - but as long as it fits in the time, bring an extra dress or button down, a football jersey, your greek letters, etc. For group shoots I'd stick to one so nobody's waiting around, but have also seen jerseys work as a fun, quick change." } },
+        { "@type": "Question", "name": "Do you provide the cap and gown?", "acceptedAnswer": { "@type": "Answer", "text": "No, you'll pick up your own regalia through your school. Grab it a few days early if you can and give it a steam or let it hang out so it doesn't have the creases it comes with." } },
+        { "@type": "Question", "name": "Can my friends and family be in the photos?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and I hope they are. Parents, partners, roommates, siblings, the dog — bring them. Solo Hour and Crew sessions have time built in for it, and it costs nothing extra." } },
+        { "@type": "Question", "name": "What if I only need a mini session, or my budget is tight?", "acceptedAnswer": { "@type": "Answer", "text": "Just ask. If it's you and one friend, or you only need twenty minutes and a few frames, I can usually put together a shorter mini session. And if I'm not the right fit for your budget, I know a few photographers I trust and I'm happy to connect you. We'll figure something out." } },
+        { "@type": "Question", "name": "Do you shoot anywhere besides Georgia Tech?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Emory regularly, and I fly out for a handful of sessions a year; Texas, NC State, and Baylor most recently. Same packages, plus travel. Tech is home turf, so if you're there I already know my way around, but most campuses have straightforward spots that everyone knows and loves." } }
+      ]
     }
   ]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://unpkg.com" crossorigin="">
-<link rel="preload" as="image" href="assets/hero-gt-a.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="assets/opt/hero-gt-a.jpg" fetchpriority="high" media="(max-width: 820px)">
+<link rel="preload" as="image" href="assets/hero-gt-a.jpg" fetchpriority="high" media="(min-width: 821px)">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Instrument+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+  if (/(^|\.)joshlens\.com$|\.vercel\.app$/.test(location.hostname)) {
+    ["/_vercel/insights/script.js", "/_vercel/speed-insights/script.js"].forEach(function (src) {
+      var s = document.createElement("script"); s.defer = true; s.src = src; document.head.appendChild(s);
+    });
+  }
+</script>
 <link rel="preconnect" href="https://assets.calendly.com" crossorigin="">
 <link rel="preconnect" href="https://calendly.com" crossorigin="">
 <link rel="dns-prefetch" href="https://calendly.com">
-<link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
+<link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" media="print" onload="this.media='all'">
 <meta name="ext-resource-dependency" content="assets/hero-gt-a.jpg" data-resource-id="a0">
 <meta name="ext-resource-dependency" content="assets/hero-gt-b.jpg" data-resource-id="a1">
 <meta name="ext-resource-dependency" content="assets/hero-em-a.jpg" data-resource-id="a2">
@@ -107,7 +179,7 @@
 <template id="__bundler_thumbnail" data-bg-color="#16150F">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120"><rect width="120" height="120" fill="#16150F"></rect><g fill="none" stroke="#D8A23C" stroke-width="3"><rect x="30" y="40" width="60" height="42" rx="6"></rect><circle cx="60" cy="61" r="13"></circle></g><rect x="52" y="33" width="16" height="8" rx="2" fill="#D8A23C"></rect></svg>
 </template>
-<script src="https://assets.calendly.com/assets/external/widget.js"></script>
+<script src="https://assets.calendly.com/assets/external/widget.js" async=""></script>
 <style>
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
@@ -135,6 +207,31 @@
   html[data-serif="source"] [style*="Instrument Serif"] { font-family: "Source Serif 4", serif !important; font-size-adjust: 0.44 !important; letter-spacing: -0.012em !important; }
   html[data-serif="crimson"] [style*="Instrument Serif"] { font-family: "Crimson Pro", serif !important; font-size-adjust: 0.50 !important; letter-spacing: -0.005em !important; }
   html[data-serif="petrona"] [style*="Instrument Serif"] { font-family: "Petrona", serif !important; font-size-adjust: 0.45 !important; letter-spacing: -0.012em !important; }
+  html[data-serif="dmsans"] [style*="Instrument Serif"] { font-family: "DM Sans", sans-serif !important; font-size-adjust: 0.48 !important; letter-spacing: -0.03em !important; font-weight: 500 !important; }
+  /* secondary accent (none | green | blue) — scoped to availability/status surfaces only, never brand */
+  @keyframes liveBreatheG { 0%, 100% { box-shadow: 0 0 0 0 rgba(63,138,93,0); } 50% { box-shadow: 0 0 0 4px rgba(63,138,93,0.13); } }
+  @keyframes liveBreatheB { 0%, 100% { box-shadow: 0 0 0 0 rgba(53,130,173,0); } 50% { box-shadow: 0 0 0 4px rgba(53,130,173,0.13); } }
+  @keyframes readyLiftG { 0%, 100% { box-shadow: 0 0 0 0 rgba(63,138,93,0); } 50% { box-shadow: 0 6px 20px rgba(63,138,93,0.34); } }
+  @keyframes readyLiftB { 0%, 100% { box-shadow: 0 0 0 0 rgba(53,130,173,0); } 50% { box-shadow: 0 6px 20px rgba(53,130,173,0.34); } }
+  html[data-secondary="green"] .stat-chip { background: rgba(63,138,93,0.12) !important; border-color: rgba(63,138,93,0.42) !important; color: #2C5B3E !important; animation-name: liveBreatheG !important; }
+  html[data-secondary="green"] .stat-dot { background: #3F8A5D !important; }
+  html[data-secondary="green"] .stat-ready { animation-name: readyLiftG !important; }
+  html[data-secondary="green"] .stat-sheen { background: linear-gradient(90deg, rgba(154,205,174,0) 0%, rgba(154,205,174,0.62) 50%, rgba(154,205,174,0) 100%) !important; }
+  html[data-secondary="green"] .stat-note { color: #3F8A5D !important; }
+  html[data-secondary="green"] .blob-sage { background: radial-gradient(closest-side, rgba(63,138,93,0.32), rgba(63,138,93,0) 72%) !important; }
+  html[data-secondary="blue"] .stat-chip { background: rgba(53,130,173,0.12) !important; border-color: rgba(53,130,173,0.42) !important; color: #275A78 !important; animation-name: liveBreatheB !important; }
+  html[data-secondary="blue"] .stat-dot { background: #3582AD !important; }
+  html[data-secondary="blue"] .stat-ready { animation-name: readyLiftB !important; }
+  html[data-secondary="blue"] .stat-sheen { background: linear-gradient(90deg, rgba(156,199,224,0) 0%, rgba(156,199,224,0.62) 50%, rgba(156,199,224,0) 100%) !important; }
+  html[data-secondary="blue"] .stat-note { color: #3582AD !important; }
+  html[data-secondary="blue"] .blob-sage { background: radial-gradient(closest-side, rgba(53,130,173,0.3), rgba(53,130,173,0) 72%) !important; }
+  html[data-secondary="green"] .stat-fig { color: #2C5B3E !important; }
+  html[data-secondary="green"] .stat-label { color: #3F8A5D !important; }
+  html[data-secondary="green"] .stat-fig-dark { color: #9ACDAE !important; }
+  html[data-secondary="blue"] .stat-fig { color: #275A78 !important; }
+  html[data-secondary="blue"] .stat-label { color: #3582AD !important; }
+  html[data-secondary="blue"] .stat-fig-dark { color: #9CC7E0 !important; }
+  @media (prefers-reduced-motion: reduce) { .stat-chip, .stat-ready { animation: none !important; } }
   /* bento loops hold at frame 0 until their tile scrolls into view */
   .bento .anim { animation-play-state: paused !important; }
   .bento > .rv-play .anim { animation-play-state: running !important; }
@@ -386,7 +483,7 @@
         </div>
         <div style="display:flex;gap:26px;flex-wrap:wrap;padding-top:8px;border-top:1px solid rgba(22,21,15,0.12);margin-top:6px">
           <div><p style="margin:10px 0 2px;font-family:'Instrument Serif',serif;font-size:26px">65+</p><p style="margin:0;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#7A7568">edited photos</p></div>
-          <div><p style="margin:10px 0 2px;font-family:'Instrument Serif',serif;font-size:26px">7 days</p><p style="margin:0;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#7A7568">turnaround</p></div>
+          <div><p class="stat-fig" style="margin:10px 0 2px;font-family:'Instrument Serif',serif;font-size:26px">7 days</p><p class="stat-label" style="margin:0;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#7A7568">turnaround</p></div>
           <div><p style="margin:10px 0 2px;font-family:'Instrument Serif',serif;font-size:26px">Will travel</p><p style="margin:0;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#7A7568">ATL &amp; out of state</p></div>
         </div>
       </div>
@@ -424,7 +521,7 @@
     <div style="padding:0 clamp(16px,4vw,40px);max-width:1400px;margin:0 auto">
       <p style="margin:0 0 12px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#A8761C">01 — Show me mine</p>
       <h2 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(30px,4.6vw,54px);line-height:1.02;letter-spacing:-0.02em;max-width:22ch;text-wrap:balance">Tell me your school and who's coming, and I'll show you what that looks like.</h2>
-      <p style="margin:14px 0 0;font-size:16px;line-height:1.55;color:#514D44;max-width:52ch;text-wrap:pretty">Real photos from real sessions - no guessing what you'll get based on some random portraits.</p>
+      <p style="margin:14px 0 0;font-size:16px;line-height:1.55;color:#514D44;max-width:56ch;text-wrap:pretty">I've been shooting graduation photos for Georgia Tech and Emory grads in Atlanta since 2020 — every frame below is from a real session, not a portfolio of strangers.</p>
 
       <div style="display:flex;flex-direction:column;gap:18px;margin-top:32px">
         <div>
@@ -459,6 +556,7 @@
         <div>
           <p style="margin:0 0 4px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#7A7568">Best fit for you</p>
           <p style="margin:0;font-size:17px;font-weight:600">{{ matchPkg }}</p>
+          <p class="stat-label" style="margin:5px 0 0;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#7A7568">{{ matchTerms }}</p>
         </div>
         <a href="#book" style="font-size:14px;font-weight:600;padding:12px 22px;border-radius:999px;background:#16150F;color:#FBF9F6" style-hover="background:#A8761C">Book this</a>
       </div>
@@ -492,6 +590,9 @@
           </figcaption>
         </figure>
       </sc-for>
+    </div>
+    <div style="max-width:1400px;margin:0 auto;padding:4px clamp(16px,4vw,40px) 0;display:flex">
+      <a href="/seasons" style="display:inline-flex;align-items:center;gap:10px;padding:12px 0;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#16150F;border-bottom:1px solid rgba(22,21,15,0.25);transition:color 0.25s ease,border-color 0.25s ease" style-hover="color:#A8761C;border-color:#A8761C">Season highlights<span aria-hidden="true">→</span></a>
     </div>
   </section>
 
@@ -615,6 +716,7 @@
         </sc-if>
       </div>
       <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+        <a href="/seasons" style="padding:12px 18px;border-radius:999px;border:1px solid rgba(251,249,246,0.28);color:#FBF9F6;font-size:13px;font-weight:500;white-space:nowrap;transition:border-color 0.25s cubic-bezier(0.22,1,0.36,1),color 0.25s cubic-bezier(0.22,1,0.36,1)" style-hover="border-color:#F0D9A6;color:#F0D9A6">Every season →</a>
         <sc-if value="{{ hasCarousel }}" hint-placeholder-val="{{ true }}">
           <div style="display:flex;gap:6px">
             <button type="button" onClick="{{ gPrev }}" aria-label="Previous photo" style="width:44px;height:44px;border-radius:999px;border:1px solid rgba(251,249,246,0.28);background:transparent;color:#FBF9F6;cursor:pointer;font-size:16px" style-hover="background:#FBF9F6;color:#16150F">←</button>
@@ -1112,7 +1214,7 @@
       <div style="position:absolute;left:22%;bottom:-22%;width:48vw;height:48vw;border-radius:999px;background:radial-gradient(closest-side,rgba(206,110,76,0.4),rgba(206,110,76,0) 72%);animation:blobC 21s ease-in-out infinite"></div>
       <div style="position:absolute;right:14%;bottom:0%;width:28vw;height:28vw;border-radius:999px;background:radial-gradient(closest-side,rgba(240,217,166,0.7),rgba(240,217,166,0) 72%);animation:blobD 13s ease-in-out infinite"></div>
       <div style="position:absolute;left:34%;top:22%;width:32vw;height:32vw;border-radius:999px;background:radial-gradient(closest-side,rgba(168,118,28,0.35),rgba(168,118,28,0) 72%);animation:blobD 24s ease-in-out infinite reverse"></div>
-      <div style="position:absolute;left:8%;top:46%;width:30vw;height:30vw;border-radius:999px;background:radial-gradient(closest-side,rgba(120,160,150,0.35),rgba(120,160,150,0) 72%);animation:blobC 16s ease-in-out infinite reverse"></div>
+      <div class="blob-sage" style="position:absolute;left:8%;top:46%;width:30vw;height:30vw;border-radius:999px;background:radial-gradient(closest-side,rgba(120,160,150,0.35),rgba(120,160,150,0) 72%);animation:blobC 16s ease-in-out infinite reverse"></div>
     </div>
     <div style="position:relative;max-width:1400px;margin:0 auto">
       <p style="margin:0 0 12px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#A8761C">06 — Let's go</p>
@@ -1121,7 +1223,7 @@
         <div style="display:flex;flex-direction:column;gap:22px">
           <h2 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(44px,8vw,104px);line-height:0.94;letter-spacing:-0.03em;max-width:16ch;text-wrap:balance">Grab your golden hour this semester.</h2>
           <div style="display:flex;flex-wrap:wrap;align-items:center;gap:18px">
-            <span style="display:inline-flex;align-items:center;gap:9px;padding:9px 16px;border-radius:999px;background:rgba(168,118,28,0.12);border:1px solid rgba(168,118,28,0.4);animation:liveBreathe 3.2s ease-in-out infinite;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A5F14"><span style="position:relative;flex-shrink:0;width: 7px; height: 7px; border-radius: 999px; background: rgb(168, 118, 28); animation: 1.8s ease-in-out 0s infinite normal none running pulseDot;"></span>Booking fall 26 now</span>
+            <span class="stat-chip" style="display:inline-flex;align-items:center;gap:9px;padding:9px 16px;border-radius:999px;background:rgba(168,118,28,0.12);border:1px solid rgba(168,118,28,0.4);animation:liveBreathe 3.2s ease-in-out infinite;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A5F14"><span class="stat-dot" style="position:relative;flex-shrink:0;width: 7px; height: 7px; border-radius: 999px; background: rgb(168, 118, 28); animation: 1.8s ease-in-out 0s infinite normal none running pulseDot;"></span>Booking fall 26 now</span>
             <p style="margin:0;font-size:17px;line-height:1.5;color:#514D44;max-width:40ch;text-wrap:pretty">Snag a time below, or send me a note and I'll hold one while we figure it out.</p>
           </div>
         </div>
@@ -1142,8 +1244,8 @@
       <div style="display:flex;flex-wrap:wrap;gap:28px;margin-top:36px;align-items:flex-start">
         <div onMouseEnter="{{ focusCal }}" onFocusCapture="{{ focusCal }}" style="flex:{{ calFlex }};min-width:0;transition:flex-grow 0.5s cubic-bezier(0.2,0.7,0.2,1),flex-basis 0.5s cubic-bezier(0.2,0.7,0.2,1)">
           <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 14px">
-            <span style="position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:#16150F;color:#FBF9F6;animation:readyLift 4.4s ease-in-out infinite;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase"><span aria-hidden="true" style="position:absolute;top:0;bottom:0;left:-40%;width:40%;background:linear-gradient(90deg,rgba(216,162,60,0) 0%,rgba(233,180,76,0.55) 50%,rgba(216,162,60,0) 100%);animation:readySheen 4.4s ease-in-out infinite"></span><span style="position:relative">Ready now — pick a time</span></span>
-            <span style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#A8761C">Where most people start</span>
+            <span class="stat-ready" style="position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:#16150F;color:#FBF9F6;animation:readyLift 4.4s ease-in-out infinite;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase"><span class="stat-sheen" aria-hidden="true" style="position:absolute;top:0;bottom:0;left:-40%;width:40%;background:linear-gradient(90deg,rgba(216,162,60,0) 0%,rgba(233,180,76,0.55) 50%,rgba(216,162,60,0) 100%);animation:readySheen 4.4s ease-in-out infinite"></span><span style="position:relative">Ready now — pick a time</span></span>
+            <span class="stat-note" style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#A8761C">Where most people start</span>
           </div>
           <div style="border:1px solid rgba(168,118,28,0.35);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 26px 70px rgba(22,21,15,0.16),0 0 0 6px rgba(216,162,60,0.14)">
             <div class="cal-box" ref="{{ setCal }}" style="min-width:280px;height:660px"></div>
@@ -1186,6 +1288,7 @@
           </sc-if>
           <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
             <div style="padding:28px 0;animation:fadeIn 0.4s ease both">
+              <p style="margin:0 0 10px;display:flex;align-items:center;gap:9px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#8A5F14"><span class="stat-dot" style="flex-shrink:0;width:7px;height:7px;border-radius:999px;background:#A8761C"></span><span class="stat-note" style="color:inherit">Message sent</span></p>
               <p style="margin:0 0 8px;font-family:'Instrument Serif',serif;font-size:28px;line-height:1.15">Got it — talk soon.</p>
               <p style="margin:0;font-size:15px;line-height:1.55;color:#514D44">I'll write back from josh.ccd@gmail.com within a day. If you'd rather just grab a time, the calendar's right there.</p>
             </div>
@@ -1371,6 +1474,7 @@
       <div style="flex:0 1 auto;display:flex;flex-direction:column;gap:8px;align-items:flex-start">
           <a href="#work" style="font-family:'Instrument Sans',sans-serif;font-size:clamp(20px,2.4vw,30px);font-weight:500;letter-spacing:-0.02em;color:#FBF9F6;transition:color 0.25s ease" style-hover="color:#D8A23C">Work</a>
           <a href="#spots" style="font-family:'Instrument Sans',sans-serif;font-size:clamp(20px,2.4vw,30px);font-weight:500;letter-spacing:-0.02em;color:#FBF9F6;transition:color 0.25s ease" style-hover="color:#D8A23C">Spots</a>
+          <a href="/seasons" style="font-family:'Instrument Sans',sans-serif;font-size:clamp(20px,2.4vw,30px);font-weight:500;letter-spacing:-0.02em;color:#FBF9F6;transition:color 0.25s ease" style-hover="color:#D8A23C">Season highlights</a>
           <a href="#packages" style="font-family:'Instrument Sans',sans-serif;font-size:clamp(20px,2.4vw,30px);font-weight:500;letter-spacing:-0.02em;color:#FBF9F6;transition:color 0.25s ease" style-hover="color:#D8A23C">Packages</a>
           <a href="#reviews" style="font-family:'Instrument Sans',sans-serif;font-size:clamp(20px,2.4vw,30px);font-weight:500;letter-spacing:-0.02em;color:#FBF9F6;transition:color 0.25s ease" style-hover="color:#D8A23C">Past grads</a>
           <a href="#offclock" style="font-family:'Instrument Sans',sans-serif;font-size:clamp(20px,2.4vw,30px);font-weight:500;letter-spacing:-0.02em;color:#FBF9F6;transition:color 0.25s ease" style-hover="color:#D8A23C">Off the clock</a>
@@ -1413,7 +1517,7 @@
 </div>
 
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;gtHero&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Champagne spray, Tech Tower&quot;,&quot;Seven walking in gowns&quot;,&quot;Five with champagne, summer&quot;],&quot;default&quot;:&quot;Champagne spray, Tech Tower&quot;,&quot;tsType&quot;:&quot;'Champagne spray, Tech Tower' | 'Seven walking in gowns' | 'Five with champagne, summer'&quot;,&quot;section&quot;:&quot;Homepage&quot;},&quot;wordmark&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;serif&quot;,&quot;caps&quot;,&quot;mono&quot;,&quot;bold&quot;,&quot;wide&quot;],&quot;default&quot;:&quot;mono&quot;,&quot;tsType&quot;:&quot;'serif' | 'caps' | 'mono' | 'bold' | 'wide'&quot;,&quot;section&quot;:&quot;Homepage&quot;},&quot;sectionMerge&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;separate&quot;,&quot;A&quot;,&quot;B&quot;,&quot;C&quot;],&quot;default&quot;:&quot;A&quot;,&quot;tsType&quot;:&quot;'separate' | 'A' | 'B' | 'C'&quot;,&quot;section&quot;:&quot;Homepage&quot;},&quot;direction&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;editorial&quot;,&quot;bold&quot;],&quot;default&quot;:&quot;editorial&quot;,&quot;tsType&quot;:&quot;'editorial' | 'bold'&quot;,&quot;section&quot;:&quot;Homepage&quot;},&quot;accent&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;gold&quot;,&quot;sky&quot;,&quot;clay&quot;,&quot;ink&quot;],&quot;default&quot;:&quot;gold&quot;,&quot;tsType&quot;:&quot;'gold' | 'sky' | 'clay' | 'ink'&quot;,&quot;section&quot;:&quot;Homepage&quot;},&quot;galleryLayout&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;filmstrip&quot;,&quot;stage&quot;,&quot;sheet&quot;],&quot;default&quot;:&quot;filmstrip&quot;,&quot;tsType&quot;:&quot;'filmstrip' | 'stage' | 'sheet'&quot;,&quot;section&quot;:&quot;Homepage&quot;},&quot;footerMark&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;dot&quot;,&quot;wordmark&quot;],&quot;default&quot;:&quot;dot&quot;,&quot;tsType&quot;:&quot;'dot' | 'wordmark'&quot;,&quot;section&quot;:&quot;Footer&quot;},&quot;bookStyle&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;spotlight&quot;,&quot;marquee&quot;],&quot;default&quot;:&quot;spotlight&quot;,&quot;tsType&quot;:&quot;'spotlight' | 'marquee'&quot;,&quot;section&quot;:&quot;Booking&quot;},&quot;bookingUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://calendly.com/joshlens/photoshoot&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Booking&quot;},&quot;workMobile&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Fill width&quot;,&quot;Uniform 4:5 cards&quot;,&quot;Full-bleed, caption over photo&quot;],&quot;default&quot;:&quot;Uniform 4:5 cards&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;The work&quot;},&quot;displaySerif&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Instrument Serif&quot;,&quot;Newsreader&quot;,&quot;Source Serif 4&quot;,&quot;Crimson Pro&quot;,&quot;Petrona&quot;],&quot;default&quot;:&quot;Instrument Serif&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Type&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;gtHero&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Champagne spray, Tech Tower&quot;,&quot;Seven walking in gowns&quot;,&quot;Five with champagne, summer&quot;],&quot;default&quot;:&quot;Champagne spray, Tech Tower&quot;,&quot;tsType&quot;:&quot;'Champagne spray, Tech Tower' | 'Seven walking in gowns' | 'Five with champagne, summer'&quot;,&quot;section&quot;:&quot;Homepage&quot;},&quot;wordmark&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;serif&quot;,&quot;caps&quot;,&quot;mono&quot;,&quot;bold&quot;,&quot;wide&quot;],&quot;default&quot;:&quot;mono&quot;,&quot;tsType&quot;:&quot;'serif' | 'caps' | 'mono' | 'bold' | 'wide'&quot;,&quot;section&quot;:&quot;Homepage&quot;},&quot;sectionMerge&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;separate&quot;,&quot;A&quot;,&quot;B&quot;,&quot;C&quot;],&quot;default&quot;:&quot;A&quot;,&quot;tsType&quot;:&quot;'separate' | 'A' | 'B' | 'C'&quot;,&quot;section&quot;:&quot;Homepage&quot;},&quot;direction&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;editorial&quot;,&quot;bold&quot;],&quot;default&quot;:&quot;editorial&quot;,&quot;tsType&quot;:&quot;'editorial' | 'bold'&quot;,&quot;section&quot;:&quot;Homepage&quot;},&quot;accent&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;gold&quot;,&quot;sky&quot;,&quot;clay&quot;,&quot;ink&quot;],&quot;default&quot;:&quot;gold&quot;,&quot;tsType&quot;:&quot;'gold' | 'sky' | 'clay' | 'ink'&quot;,&quot;section&quot;:&quot;Homepage&quot;},&quot;secondaryAccent&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;None (amber only)&quot;,&quot;Eucalyptus green&quot;,&quot;Slate blue&quot;],&quot;default&quot;:&quot;Slate blue&quot;,&quot;tsType&quot;:&quot;'None (amber only)' | 'Eucalyptus green' | 'Slate blue'&quot;,&quot;section&quot;:&quot;Homepage&quot;},&quot;galleryLayout&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;filmstrip&quot;,&quot;stage&quot;,&quot;sheet&quot;],&quot;default&quot;:&quot;filmstrip&quot;,&quot;tsType&quot;:&quot;'filmstrip' | 'stage' | 'sheet'&quot;,&quot;section&quot;:&quot;Homepage&quot;},&quot;footerMark&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;dot&quot;,&quot;wordmark&quot;],&quot;default&quot;:&quot;dot&quot;,&quot;tsType&quot;:&quot;'dot' | 'wordmark'&quot;,&quot;section&quot;:&quot;Footer&quot;},&quot;bookStyle&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;spotlight&quot;,&quot;marquee&quot;],&quot;default&quot;:&quot;spotlight&quot;,&quot;tsType&quot;:&quot;'spotlight' | 'marquee'&quot;,&quot;section&quot;:&quot;Booking&quot;},&quot;bookingUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://calendly.com/joshlens/photoshoot&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Booking&quot;},&quot;workMobile&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Fill width&quot;,&quot;Uniform 4:5 cards&quot;,&quot;Full-bleed, caption over photo&quot;],&quot;default&quot;:&quot;Uniform 4:5 cards&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;The work&quot;},&quot;displaySerif&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Instrument Serif&quot;,&quot;Newsreader&quot;,&quot;Source Serif 4&quot;,&quot;Crimson Pro&quot;,&quot;Petrona&quot;,&quot;DM Sans&quot;],&quot;default&quot;:&quot;Instrument Serif&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Type&quot;}}">
 const CONTACT_EMAIL = "josh.ccd@gmail.com";
 
 const PHOTOS = [
@@ -1506,7 +1610,21 @@ const PHOTOS = [
   { src: "assets/baylor-solo-columns.jpg", school: "other", types: ["solo"], spot: "Baylor", tag: "Solo · spring", alt: "Baylor grad in a green stole against a tall limestone column" },
   { src: "assets/ncstate-vet-solo-sign.jpg", school: "other", types: ["solo"], spot: "NC State", tag: "Vet grad · spring", alt: "Vet grad in full regalia under the College of Veterinary Medicine sign" },
   { src: "assets/gsu-solo-stairs.jpg", school: "other", types: ["solo"], spot: "Georgia State", tag: "Solo · golden hour", alt: "Georgia State grad on a glass staircase in bright even light" },
-  { src: "assets/baylor-solo-yellow.jpg", school: "other", types: ["solo"], spot: "Baylor", tag: "Solo · spring", alt: "Baylor grad seated on a low wall in a yellow dress and green stole" }
+  { src: "assets/baylor-solo-yellow.jpg", school: "other", types: ["solo"], spot: "Baylor", tag: "Solo · spring", alt: "Baylor grad seated on a low wall in a yellow dress and green stole" },
+  { src: "assets/seasons/spring-2025/gt-bobby-dodd-trio-caps-up-field.jpg", school: "gt", types: ["trio", "group"], spot: "Bobby Dodd", tag: "Trio · spring", alt: "Three Georgia Tech grads walking toward the scoreboard with caps raised at Bobby Dodd Stadium" },
+  { src: "assets/seasons/spring-2025/gt-tech-lawn-duo-piggyback-champagne.jpg", school: "gt", types: ["duo"], spot: "Tech Tower", tag: "Duo · spring", alt: "Two Georgia Tech grads cheering with champagne bottles in a piggyback on the lawn" },
+  { src: "assets/seasons/spring-2025/gt-brick-path-duo-eagles-jersey.jpg", school: "gt", types: ["duo"], spot: "Harrison Square", tag: "Duo · spring", alt: "Georgia Tech grad in an Eagles jersey cheering while his partner gasps on a brick path" },
+  { src: "assets/seasons/spring-2025/gt-campanile-solo-champagne-kick.jpg", school: "gt", types: ["solo"], spot: "The Campanile", tag: "Solo · spring", alt: "Georgia Tech grad kicking up a heel as champagne sprays beside the Campanile" },
+  { src: "assets/seasons/spring-2025/emory-law-solo-books.jpg", school: "emory", types: ["solo"], spot: "School of Law", tag: "Solo · summer", alt: "Emory Law grad in a white dress carrying law books outside the School of Law" },
+  { src: "assets/seasons/spring-2025/emory-quad-solo-doctoral-chapel.jpg", school: "emory", types: ["solo"], spot: "Glenn Memorial", tag: "Solo · spring", alt: "Emory grad in a doctoral robe and tam smiling on the quad by Glenn Memorial" },
+  { src: "assets/seasons/spring-2025/baylor-stadium-bridge-trio-cheer.jpg", school: "other", types: ["trio", "group"], spot: "Baylor", tag: "Trio · spring", alt: "Three Baylor grads cheering on the bridge outside McLane Stadium" },
+  { src: "assets/seasons/spring-2025/gsu-piedmont-park-solo-doctoral.jpg", school: "other", types: ["solo"], spot: "Georgia State", tag: "Solo · spring", alt: "Georgia State PhD grad in a blue doctoral robe in Piedmont Park, Midtown skyline behind" },
+  { src: "assets/seasons/spring-2025/gsu-colonnade-solo-doctoral.jpg", school: "other", types: ["solo"], spot: "Georgia State", tag: "Solo · spring", alt: "Georgia State PhD grad in a blue doctoral robe and tam between white columns" },
+  { src: "assets/seasons/spring-2026/gt-tech-tower-trio-hug.jpg", school: "gt", types: ["trio", "group"], spot: "Tech Tower", tag: "Trio · spring", alt: "Three Georgia Tech grads in black dresses hugging and smiling on the lawn below Tech Tower" },
+  { src: "assets/seasons/spring-2026/gt-steps-duo-wood-doors.jpg", school: "gt", types: ["duo"], spot: "Other favorites", tag: "Duo · spring", alt: "Two Georgia Tech grads sitting on stone steps in front of old wooden doors" },
+  { src: "assets/seasons/spring-2026/emory-quad-trio-white-dresses.jpg", school: "emory", types: ["trio", "group"], spot: "Emory Quad", tag: "Trio · spring", alt: "Three Emory grads in white dresses walking hand in hand across the quad" },
+  { src: "assets/seasons/spring-2026/emory-administration-solo-athlete-stole.jpg", school: "emory", types: ["solo"], spot: "Emory Quad", tag: "Solo · spring", alt: "Emory student-athlete in a white athlete stole twirling outside the Administration Building" },
+  { src: "assets/seasons/spring-2026/vet-scrubs-trio-grass.jpg", school: "other", types: ["trio", "group"], spot: "NC State", tag: "Trio · spring", alt: "Three new NC State veterinarians in maroon scrubs lying in the grass laughing" }
 ];
 
 const SCHOOLS = [
@@ -1530,10 +1648,10 @@ const COPY = {
 };
 
 const PKG = {
-  solo: "Solo Hour — $349 · 1 hour, 65+ edited photos",
-  trio: "The Crew — $450 for three grads, +$50 each after",
-  group: "Group Frames — $359 flat, any size",
-  duo: "Duo Hour — $410 · one hour split between the two of you"
+  solo: { name: "Solo Hour — $349", terms: "1 hour · 65+ edited photos · 7-day delivery" },
+  trio: { name: "The Crew — $450 for three grads", terms: "+$50 each after · 100+ edited photos · 7-day delivery" },
+  group: { name: "Group Frames — $359 flat", terms: "Any group size · 7-day delivery" },
+  duo: { name: "Duo Hour — $410", terms: "One hour split between the two of you · 7-day delivery" }
 };
 
 const SPOTS_GT = [
@@ -1814,6 +1932,7 @@ class Component extends DCLogic {
 
   componentDidMount() {
     this.syncSerif();
+    this.syncSecondary();
     this.syncNarrow();
     window.addEventListener("resize", this.syncNarrow, { passive: true });
     document.documentElement.classList.toggle("nav-past-hero", window.scrollY > window.innerHeight * 0.85);
@@ -1916,8 +2035,20 @@ class Component extends DCLogic {
     return list.map(p => Object.assign({}, p, { src: this.resolveAsset(p.src) }));
   }
 
+  // Phones get the downscaled tier in assets/opt (long edge 1600, thumbs 900) — roughly a tenth
+  // the bytes of the full-resolution exports desktop keeps loading. Decided once per load, so a
+  // rotation or resize never re-requests a photo at the other size.
+  _mobileTier = typeof window !== "undefined" && !!(window.matchMedia && window.matchMedia("(max-width: 820px)").matches);
+
+  mobileAsset(path) {
+    if (!this._mobileTier || !path || !path.startsWith("assets/") || path.startsWith("assets/opt/")) return path;
+    if (!/\.jpe?g$/i.test(path)) return path;
+    return "assets/opt/" + path.slice(7);
+  }
+
   resolveAsset(path) {
     if (!path) return path;
+    path = this.mobileAsset(path);
     if (!this._resMap) {
       this._resMap = {};
       if (typeof document !== "undefined") {
@@ -1947,7 +2078,7 @@ class Component extends DCLogic {
     this.applyHeroSrc("b", this._heroBEl);
     this.applyHeroSrc("bPrev", this._heroBPrevEl);
   }
-  componentDidUpdate() { this.syncHeroSrc(); this.syncSerif(); }
+  componentDidUpdate() { this.syncHeroSrc(); this.syncSerif(); this.syncSecondary(); }
 
   setHowFill = el => { this.howFill = el; };
 
@@ -2097,8 +2228,14 @@ class Component extends DCLogic {
 
   lay() { return this.state.lay || this.props.galleryLayout || "filmstrip"; }
   mobLay() { return this.props.workMobile || "Fill width"; }
+  syncSecondary() {
+    const map = { "None (amber only)": "", "Eucalyptus green": "green", "Slate blue": "blue" };
+    const k = map[this.props.secondaryAccent] || "";
+    if (k) document.documentElement.setAttribute("data-secondary", k);
+    else document.documentElement.removeAttribute("data-secondary");
+  }
   syncSerif() {
-    const map = { "Instrument Serif": "", "Newsreader": "newsreader", "Source Serif 4": "source", "Crimson Pro": "crimson", "Petrona": "petrona" };
+    const map = { "Instrument Serif": "", "Newsreader": "newsreader", "Source Serif 4": "source", "Crimson Pro": "crimson", "Petrona": "petrona", "DM Sans": "dmsans" };
     const k = map[this.props.displaySerif] || "";
     if (k) document.documentElement.setAttribute("data-serif", k);
     else document.documentElement.removeAttribute("data-serif");
@@ -2263,7 +2400,8 @@ class Component extends DCLogic {
       matched: matched,
       matchCount: matched.length + " frames",
       matchCopy: COPY[type],
-      matchPkg: PKG[type],
+      matchPkg: (PKG[type] || PKG.solo).name,
+      matchTerms: (PKG[type] || PKG.solo).terms,
       mRef: this.setMEl,
       sRef: this.setSEl,
       mPrev: this.mPrev,
