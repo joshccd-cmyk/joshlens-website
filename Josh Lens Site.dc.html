@@ -75,9 +75,9 @@
         "@type": "OfferCatalog",
         "name": "Graduation photo packages",
         "itemListElement": [
-          { "@type": "Offer", "name": "The Crew", "price": "450", "priceCurrency": "USD", "description": "Three or more grads, solos plus group frames. +$50 each additional grad." },
+          { "@type": "Offer", "name": "The Crew", "price": "450", "priceCurrency": "USD", "description": "Three grads, solos plus group frames. Four or more: $100 + $95 per grad." },
           { "@type": "Offer", "name": "Solo Hour", "price": "349", "priceCurrency": "USD", "description": "One full hour for one grad, outfit changes welcome." },
-          { "@type": "Offer", "name": "Group Frames", "price": "359", "priceCurrency": "USD", "description": "Group shots only, flat price for any group size." }
+          { "@type": "Offer", "name": "Group Frames", "price": "369", "priceCurrency": "USD", "description": "Group shots only, flat price for any group size." }
         ]
       }
     },
@@ -1278,7 +1278,7 @@
             <p style="margin:0 0 6px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#7A7568">Not sure yet — just say hi</p>
           </sc-if>
           <sc-if value="{{ formShown }}" hint-placeholder-val="{{ true }}">
-          <p style="margin:14px 0 20px;font-size:15px;line-height:1.55;color:#514D44;text-wrap:pretty">Tell me your date, your campus, and what you're thinking - or any questions! I'll usually get back within a day or two.</p>
+          <p style="margin:14px 0 20px;font-size:15px;line-height:1.55;color:#514D44;text-wrap:pretty">Tell me your date, your campus, and what you're thinking - or any questions! I'll usually get back within a day or two. Rather DM? Find me on Instagram at <a href="https://instagram.com/josh.lens" target="_blank" rel="noopener" style="color:#16150F;font-weight:600;text-decoration:underline;text-decoration-color:rgba(168,118,28,0.5);text-underline-offset:3px;transition:color 0.2s ease" style-hover="color:#A8761C">@josh.lens</a>.</p>
           <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
             <form onSubmit="{{ submit }}" style="display:flex;flex-direction:column;gap:12px">
               <input name="name" placeholder="Your name" required="required" style="width:100%;padding:14px 14px;border-radius:5px;border:1px solid rgba(22,21,15,0.18);background:#FBF9F6;font-size:16px">
@@ -1658,8 +1658,8 @@ const COPY = {
 
 const PKG = {
   solo: { name: "Solo Hour — $349", terms: "1 hour · 65+ edited photos · 7-day delivery" },
-  trio: { name: "The Crew — $450 for three grads", terms: "+$50 each after · 100+ edited photos · 7-day delivery" },
-  group: { name: "Group Frames — $359 flat", terms: "Any group size · 7-day delivery" },
+  trio: { name: "The Crew — $450 for three grads", terms: "4+ grads: $100 + $95 each · 100+ edited photos · 7-day delivery" },
+  group: { name: "Group Frames — $369 flat", terms: "Any group size · 7-day delivery" },
   duo: { name: "Duo Hour — $410", terms: "One hour split between the two of you · 7-day delivery" }
 };
 
@@ -1702,9 +1702,9 @@ const STEPS = [
 ];
 
 const PACKAGES = [
-  { kicker: "Three or more", name: "The Crew", price: "$450", priceNote: "for three grads · +$50 each additional", featured: true, blurb: "Everyone gets the best of solos plus a ton together. Roommates book this one a lot, and it's honestly my favorite kind of session, and the best value here!", items: ["100+ fully edited photos, more with a bigger group", "Solos at the best spots for every person", "Full group set together", "From 1 hr 15, depending on group size"] },
+  { kicker: "Three or more", name: "The Crew", price: "$450", priceNote: "for three grads · 4+: $100 + $95 per grad", featured: true, blurb: "Everyone gets the best of solos plus a ton together. Roommates book this one a lot, and it's honestly my favorite kind of session, and the best value here!", items: ["100+ fully edited photos, more with a bigger group", "Solos at the best spots for every person", "Full group set together", "From 1 hr 15, depending on group size"] },
   { kicker: "One grad", name: "Solo Hour", price: "$349", priceNote: "1 hour · one grad", second: true, blurb: "The full hour is yours. Change outfits if you want to, and there's time at the end for whoever shows up.", items: ["65+ fully edited photos", "Outfit changes welcome", "Family & friends can jump in"] },
-  { kicker: "Group only", name: "Group Frames", price: "$359", priceNote: "flat · any group size" , blurb: "Just the group shots, no solos. Bring four people or fourteen — the price doesn't move. It's the easiest one to pull off.", items: ["65+ fully edited photos", "One flat price, any size", "1 hour, keeps moving"] }
+  { kicker: "Group only", name: "Group Frames", price: "$369", priceNote: "flat · any group size" , blurb: "Just the group shots, no solos. Bring four people or fourteen — the price doesn't move. It's the easiest one to pull off.", items: ["65+ fully edited photos", "One flat price, any size", "1 hour, keeps moving"] }
 ];
 
 const REVIEWS = [
