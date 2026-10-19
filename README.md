@@ -55,6 +55,11 @@ build.mjs` audits this and refuses to build if any photo is missing its twin, so
 push. Note that `assets/opt/thumbs/hero-*.jpg` legitimately doesn't exist — the heroes have no
 thumbnail originals either.
 
+**Exception – the "Off the clock" travel strip** points straight at `assets/opt/travel/` on every
+screen. Those `<img>` tags are plain HTML (not routed through `resolveAsset()`), and the strip never
+shows a photo taller than 440px, so the 1600px copies are sharp even on retina desktops – the
+originals (~4–5MB each, 108MB total) were being sent to phones.
+
 ## Performance notes
 
 - The hero is preloaded with `fetchpriority="high"` — two `media`-scoped links so phones preload the
