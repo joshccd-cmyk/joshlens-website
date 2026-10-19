@@ -147,8 +147,11 @@
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-  if (/(^|\.)joshlens\.com$|\.vercel\.app$/.test(location.hostname)) {
+  // The template runtime can run this block twice; the flag + tag check keep analytics to one load per visit.
+  if (!window.__jlAnalytics && /(^|\.)joshlens\.com$|\.vercel\.app$/.test(location.hostname)) {
+    window.__jlAnalytics = true;
     ["/_vercel/insights/script.js", "/_vercel/speed-insights/script.js"].forEach(function (src) {
+      if (document.querySelector('script[src="' + src + '"]')) return;
       var s = document.createElement("script"); s.defer = true; s.src = src; document.head.appendChild(s);
     });
   }
@@ -1247,6 +1250,12 @@
             <span class="stat-ready" style="position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:#16150F;color:#FBF9F6;animation:readyLift 4.4s ease-in-out infinite;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase"><span class="stat-sheen" aria-hidden="true" style="position:absolute;top:0;bottom:0;left:-40%;width:40%;background:linear-gradient(90deg,rgba(216,162,60,0) 0%,rgba(233,180,76,0.55) 50%,rgba(216,162,60,0) 100%);animation:readySheen 4.4s ease-in-out infinite"></span><span style="position:relative">Ready now — pick a time</span></span>
             <span class="stat-note" style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#A8761C">Where most people start</span>
           </div>
+          <sc-if value="{{ availNote }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:0 0 8px;display:flex;align-items:flex-start;gap:8px;font-size:15px;line-height:1.45;font-weight:600;color:#16150F;text-wrap:pretty"><span aria-hidden="true" style="flex-shrink:0;width:7px;height:7px;margin-top:7px;border-radius:999px;background:#A8761C"></span>{{ availLine }}</p>
+          </sc-if>
+          <sc-if value="{{ seasonNote }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:0 0 14px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#A8761C">{{ seasonLine }}</p>
+          </sc-if>
           <div style="border:1px solid rgba(168,118,28,0.35);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 26px 70px rgba(22,21,15,0.16),0 0 0 6px rgba(216,162,60,0.14)">
             <div class="cal-box" ref="{{ setCal }}" style="min-width:280px;height:660px"></div>
           </div>
@@ -1861,7 +1870,7 @@ const HERO = {
 };
 
 class Component extends DCLogic {
-  state = { dir: null, school: "gt", prevSchool: null, type: "solo", spot: 0, open: 0, sent: false, gIndex: 0, ctaOn: false, navLight: false, navBare: true, grads: 0, panel: null, calFailed: false };
+  state = { dir: null, school: "gt", prevSchool: null, type: "solo", spot: 0, open: 0, sent: false, gIndex: 0, ctaOn: false, navLight: false, navBare: true, grads: 0, panel: null, calFailed: false, avail: null };
 
   setMEl = el => { this.mEl = el; };
   setSEl = el => { this.sEl = el; };
@@ -1939,6 +1948,7 @@ class Component extends DCLogic {
     requestAnimationFrame(() => { this.syncHowBar(); this.syncHowTicks(); });
     this.syncHeroSrc();
     this.warmCal();
+    this.loadAvail();
     this.waitForResources(0);
     this.onWinScroll();
     this.revealBento();
@@ -2162,6 +2172,15 @@ class Component extends DCLogic {
     if (el) this.initCal();
   };
 
+  // Open Calendly slots left this month / next month, from /api/availability
+  // (a Vercel function holding the Calendly token). Fails quietly: no line shown.
+  loadAvail() {
+    fetch("/api/availability")
+      .then(r => (r.ok ? r.json() : null))
+      .then(d => { if (d && typeof d.left === "number") this.setState({ avail: d }); })
+      .catch(() => {});
+  }
+
   // Belt-and-braces: if the widget iframe hasn't materialized a couple of
   // seconds after load, kick the init again so it's warm well before scroll.
   warmCal() {
@@ -2300,6 +2319,17 @@ class Component extends DCLogic {
       frameTag: (p.tag || "").split(" · ")[0] || p.index
     }));
 
+    const av = this.state.avail;
+    const tapWord = this.state.narrow ? "tap" : "click";
+    const availNote = !!av && av.left <= 5;
+    const availLine = !availNote ? "" :
+      av.left === 0
+        ? av.month + "'s booked up – " + tapWord + " → for " + av.nextMonth + " dates."
+        : av.month + "'s almost booked – " + (av.left === 1 ? "1 date" : av.left + " dates") + " left. " + tapWord.charAt(0).toUpperCase() + tapWord.slice(1) + " → for " + av.nextMonth + ".";
+    const mNow = new Date().getMonth() + 1;
+    const seasonLine = mNow >= 8 && mNow <= 10 ? "Fall usually books up by late October."
+      : mNow >= 1 && mNow <= 3 ? "Spring usually books up by mid-March." : "";
+
     return {
       wmSerif: (this.props.wordmark || "serif") === "serif",
       wmCaps: (this.props.wordmark || "serif") === "caps",
@@ -2360,6 +2390,10 @@ class Component extends DCLogic {
       bookUrl: this.bookUrl(),
       bookUrlLabel: this.bookUrl().replace(/^https?:\/\//, ""),
       calFailed: this.state.calFailed,
+      availNote: availNote,
+      availLine: availLine,
+      seasonNote: !!seasonLine,
+      seasonLine: seasonLine,
       setCal: this.setCal,
 
       heroKicker: hero.kicker,
